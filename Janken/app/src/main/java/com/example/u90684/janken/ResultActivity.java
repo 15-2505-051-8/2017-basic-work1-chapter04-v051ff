@@ -17,12 +17,13 @@ public class ResultActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_result);
 
         int myHand = 0;
         Intent intent = getIntent();
         int id = intent.getIntExtra("MY_HAND", 0);
-        ImageView myHandImageView = (ImageView) findViewById(R.id.my_hand_imge);
+        ImageView myHandImageView = (ImageView)findViewById(R.id.my_hand_imge);
+
         switch (id) {
             case R.id.gu:
                 myHandImageView.setImageResource(R.drawable.gu);
